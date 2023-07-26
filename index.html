@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labradors</title>
+    <style>
+      h1 {
+        font-weight: 100px;
+        background-color: transparent;
+
+        color: #595cae;
+        text-align: center;
+        border-width: 1px;
+        border-style: double;
+        border-radius: 10px;
+        border-color: #595cae;
+      }
+      h2 {
+        font-weight: 300px;
+        text-align: center;
+        color: #454781;
+        padding: 10px;
+      }
+      span {
+        color: #2b4a43;
+      }
+      img {
+        display: block;
+        margin: 0 auto 40px;
+        max-width: 60%;
+        border-radius: 10px;
+      }
+      p {
+        display: block;
+        color: #26284d;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      a {
+        display: block;
+        font-size: 13px;
+        color: #424478;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #424478;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .footer {
+        text-align: center;
+        color: #424478;
+        border-radius: 4px;
+      }
+      .container {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        border-style: hidden;
+        border-width: 10px;
+        border-radius: 4px;
+        background: linear-gradient(
+          to right,
+          rgb(182, 244, 146),
+          rgb(51, 139, 147)
+        );
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 20px 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        🐕
+        <br />
+        <strong>I love Labradors</strong>
+      </h1>
+      <h2>
+        <em>Especially <span>Sally</span></em>
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/035/original/Sally.jpeg?1685629856"
+        alt="Sally, my labrador"
+      />
+      <hr />
+      <p>
+        <strong>The Labrador Retriever </strong>or simply
+        <strong>Labrador</strong>, is a British breed of retriever gun dog. It
+        was developed in the United Kingdom from fishing dogs imported from the
+        colony of Newfoundland (now a province of Canada), and was named after
+        the Labrador region of that colony. It is among the most commonly kept
+        dogs in several countries, particularly in the Western world.
+      </p>
+      <p>
+        The Labrador is friendly, energetic, and playful. It was bred as a
+        sporting and hunting dog but is widely kept as a companion dog. It may
+        also be trained as a guide or assistance dog, or for rescue or therapy
+        work.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Labrador_Retriever"
+        target=" _blank"
+      >
+        Learn more on Wikipedia
+      </a>
+      <br />
+      <button>See the gallery</button>
+      <br />
+      <p class="footer">This page was built by <em>Marta Nowak</em></p>
+    </div>
+    <script>
+      function dogCheck() {
+        let name = prompt("What is your name?");
+        let dog = prompt("Do you have a dog?");
+        dog = dog.toLowerCase();
+        dog = dog.trim();
+
+        if (dog === "yes") {
+          alert("Good job, " + name + "! Have fun with your dog! 🐕 ");
+        }
+        if (dog === "no") {
+          alert("Go on, " + name + "! Get a Labrador! 🐕 ");
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", dogCheck);
+    </script>
+  </body>
+</html>
